@@ -1,0 +1,133 @@
+﻿UnitName;;;;;;UnitName;PACKMLv30
+;Command;;;;;UnitName.Command;PMLc
+;;UnitMode;;;;UnitName.Command.UnitMode;Int (32bit)
+;;UnitModeChangeRequest;;;;UnitName.Command.UnitModeChangeRequest;Bool
+;;MachSpeed;;;;UnitName.Command.MachSpeed;Real
+;;MaterialInterlock;;;;UnitName.Command.MaterialInterlocks;Bool Struct
+;;MaterialLow;;;;UnitName.Command.MaterialLow;Bool Struct
+;;CntrlCmd;;;;UnitNameCommand.CntrlCmd;Int (32bit)
+;;CmdChangeRequest;;;;UnitName.Command.CmdChangeRequest;Bool
+;;RemoteInterface[#];;;;UnitName.Command.RemoteInterface[#];Interface
+;;;Number;;;UnitName.Command.RemoteInterface[#].Number;Int (32bit)
+;;;ControlCmdNumber;;;UnitName.Command.RemoteInterface[#].ControlCmdNumber;Int (32bit)
+;;;CmdValue;;;UnitName.Command.RemoteInterface[#].CmdValue;Int (32bit)
+;;;Parameter[#];;;UnitName.Command.RemoteInterface[#].Parameter[#];Descriptor
+;;;;ID;;UnitName.Command.RemoteInterface[#].Parameter[#].ID;Int (32bit)
+;;;;Name;;UnitName.Command.RemoteInterface[#].Parameter[#].Name;String
+;;;;Unit;;UnitName.Command.RemoteInterface[#].Parameter[#].Unit;String
+;;;;Value;;UnitName.Command.RemoteInterface[#].Parameter[#].Value;Real
+;;Parameter[#];;;;UnitName.Command.Parameter[#];Descriptor
+;;;ID;;;UnitName.Command.Parameter[#].ID;Int (32bit)
+;;;Name;;;UnitName.Command.Parameter[#].Name;String
+;;;Unit;;;UnitName.Command.Parameter[#].Unit;String
+;;;Value;;;UnitName.Command.Parameter[#].Value;Real
+;;Product[#];;;;UnitName.Command.Product[#];Product
+;;;ProductID;;;UnitName.Command.Product[#].ProductID;Int (32bit)
+;;;ProcessVariables[#];;;UnitName.Command.Product[#].ProcessVariables[#];Descriptor
+;;;;ID;;UnitName.Command.Product[#].ProcessVariables[#].ID;Int (32bit)
+;;;;Name;;UnitName.Command.Product[#].ProcessVariables[#].Name;String
+;;;;Unit;;UnitName.Command.Product[#].ProcessVariables[#].Unit;String
+;;;;Value;;UnitName.Command.Product[#].ProcessVariables[#].Value;Real
+;;;Ingredients[#];;;UnitName.Command.Product[#].Ingredients[#];Ingredient
+;;;;IngredientID;;UnitName.Command.Product[#].Ingredients[#].IngredientID;Int (32bit)
+;;;;Parameter[#];;UnitName.Command.Product[#].Ingredients[#].Parameter[#];Descriptor
+;;;;;ID;UnitName.Command.Product[#].Ingredients[#].Parameter[#].ID;Int (32bit)
+;;;;;Name;UnitName.Command.Product[#].Ingredients[#].Parameter[#].Name;String
+;;;;;Unit;UnitName.Command.Product[#].Ingredients[#].Parameter[#].Unit;String
+;;;;;Value;UnitName.Command.Product[#].Ingredients[#].Parameter[#].Value;Real
+;;;;;;;
+;Status;;;;;UnitName.Status;PMLs
+;;UnitModeCurrent;;;;UnitName.Status.UnitModeCurrent;Int (32bit)
+;;UnitModeRequested;;;;UnitName.Status.UnitModeRequested;Bool
+;;UnitModeChangeInProcess;;;;UnitName.Status.UnitModeChangeInProcess;Bool
+;;StateCurrent;;;;UnitName.Status.StateCurrent;Int (32bit)
+;;StateRequested;;;;UnitName.Status.StateRequested;Int (32bit)
+;;StateChangeInProcess;;;;UnitName.Status.StateChangeInProcess;Bool
+;;MachSpeed;;;;UnitName.Status.MachSpeed;Real
+;;CurMachSpeed;;;;UnitName.Status.CurMachSpeed;Real
+;;MaterialInterlock;;;;UnitName.Status.MaterialInterlock;Bool Struct
+;;MaterialLow;;;;UnitName.Status.MaterialLow;Bool Struct
+;;RemoteInterface[#];;;;UnitName.Status.RemoteInterface[#];Interface
+;;;Number;;;UnitName.Status.RemoteInterface[#].Number;Int (32bit)
+;;;ControlCmdNumber;;;UnitName.Status.RemoteInterface[#].ControlCmdNumber;Int (32bit)
+;;;CmdValue;;;UnitName.Status.RemoteInterface[#].CmdValue;Int (32bit)
+;;;Parameter[#];;;UnitName.Status.RemoteInterface[#].Parameter[#];Descriptor
+;;;;ID;;UnitName.Status.RemoteInterface[#].Parameter[#].ID;Int (32bit)
+;;;;Name;;UnitName.Status.RemoteInterface[#].Parameter[#].Name;String
+;;;;Unit;;UnitName.Status.RemoteInterface[#].Parameter[#].Unit;String
+;;;;Value;;UnitName.Status.RemoteInterface[#].Parameter[#].Value;Real
+;;Parameter[#];;;;UnitName.Status.Parameter[#];Descriptor
+;;;ID;;;UnitName.Status.Parameter[#].ID;Int (32bit)
+;;;Name;;;UnitName.Status.Parameter[#].Name;String
+;;;Unit;;;UnitName.Status.Parameter[#].Unit;String
+;;;Value;;;UnitName.Status.Parameter[#].Value;Real
+;;Product[#];;;;UnitName.Status.Product[#];Product
+;;;ProductID;;;UnitName.Status.Product[#].ID;Int (32bit)
+;;;ProcessVariables[#];;;UnitName.Status.Product[#].ProcessVariables[#];Descriptor
+;;;;;ID;UnitName.Status.Product[#].ProcessVariables[#].ID;Int (32bit)
+;;;;;Name;UnitName.Status.Product[#].ProcessVariables[#].Name;String
+;;;;;Unit;UnitName.Status.Product[#].ProcessVariables[#].Unit;String
+;;;;;Value;UnitName.Status.Product[#].ProcessVariables[#].Value;Real
+;;;Ingredients[#];;;UnitName.Status.Product[#].Ingredients;Ingredient
+;;;;IngredientID;;UnitName.Status.Product[#].IngredientID;Int (32bit)
+;;;;Parameters[#];;UnitName.Status.Product[#].Parameter[#];Descriptor
+;;;;;ID;UnitName.Status.Product[#].Parameter[#].ID;Int (32bit)
+;;;;;Name;UnitName.Status.Product[#].Parameter[#].Name;String
+;;;;;Unit;UnitName.Status.Product[#].Parameter[#].Unit;String
+;;;;;Value;UnitName.Status.Product[#].Parameter[#].Value;Real
+;;;;;;;
+;Admin;;;;;UnitName.Admin;PMLa
+;;Parameter[#];;;;UnitName.Admin.Parameter[#];Descriptor
+;;;ID;;;UnitName.Admin.Parameter[#].ID;Int (32bit)
+;;;Name;;;UnitName.Admin.Parameter[#].Name;String
+;;;Unit;;;UnitName.Admin.Parameter[#].Unit;String
+;;;Value;;;UnitName.Admin.Parameter[#].Value;Real
+;;Alarm[#];;;;UnitName.Admin.Alarm[#];Alarm
+;;;ID;;;UnitName.Admin.Alarm[#].ID;Int (32bit)
+;;;Value;;;UnitName.Admin.Alarm[#].Value;Int (32bit)
+;;;Message;;;UnitName.Admin.Alarm[#].Message;String
+;;;TimeEvent;;;UnitName.Admin.Alarm[#].TimeEvent;TimeStamp
+;;;;AlmDate;;UnitName.Admin.Alarm[#].TimeEvent.AlmDate;Date
+;;;;AlmTime;;UnitName.Admin.Alarm[#].TimeEvent.AlmTime;Time
+;;;TimeAck;;;UnitName.Admin.Alarm[#].TimeAck;TimeStamp
+;;;;AlmDate;;UnitName.Admin.Alarm[#].TimeAck.AlmDate;Date
+;;;;AlmTime;;UnitName.Admin.Alarm[#].TimeAck.AlmTime;Time
+;;AlarmExtent;;;;UnitName.Admin.AlarmExtent;Int (32bit)
+;;ModeCurrentTime[#];;;;UnitName.Admin.ModeCurrentTime[#];Int (32bit)
+;;ModeCumulativeTime[#];;;;UnitName.Admin.ModeCumulativeTime[#];Int (32bit)
+;;StateCurentTime[#,#] (Mode, State);;;;UnitName.Admin.StateCurrentTime[#,#] (Mode, State);Int (32bit)
+;;StateCumulativeTime[#,#] (Mode, State);;;;UnitName.Admin.StateCumulativeTime[#,#] (Mode, State);Int (32bit)
+;;ProdConsumedCount[#];;;;UnitName.Admin.ProdConsumedCount[#];CntDescrip
+;;;ID;;;UnitName.Admin.ProdConsumedCount[#].ID;Int (32bit)
+;;;Name;;;UnitName.Admin.ProdConsumedCount[#].Name;String
+;;;Unit;;;UnitName.Admin.ProdConsumedCount[#].Unit;String
+;;;Count;;;UnitName.Admin.ProdConsumedCount[#].Count;Int (32bit)
+;;;AccCount;;;UnitName.Admin.ProdConsumedCount[#].AccCount;Int (32bit)
+;;ProdProcessedCount[#];;;;UnitName.Admin.ProdProcessedCount[#];CntDescrip
+;;;ID;;;UnitName.Admin.ProdProcessedCount[#].ID;Int (32bit)
+;;;Name;;;UnitName.Admin.ProdProcessedCount[#].Name;String
+;;;Unit;;;UnitName.Admin.ProdProcessedCount[#].Unit;String
+;;;Count;;;UnitName.Admin.ProdProcessedCount[#].Count;Int (32bit)
+;;;AccCount;;;UnitName.Admin.ProdProcessedCount[#].AccCount;Int (32bit)
+;;ProdDefectiveCount[#];;;;UnitName.Admin.ProdDefectiveCount[#];CntDescrip
+;;;ID;;;UnitName.Admin.ProdDefectiveCount[#].ID;Int (32bit)
+;;;Name;;;UnitName.Admin.ProdDefectiveCount[#].Name;String
+;;;Unit;;;UnitName.Admin.ProdDefectiveCount[#].Unit;String
+;;;Count;;;UnitName.Admin.ProdDefectiveCount[#].Count;Int (32bit)
+;;;AccCount;;;UnitName.Admin.ProdDefectiveCount[#].AccCount;Int (32bit)
+;;AccTimeSinceReset;;;;UnitName.Admin.AccTimeSinceReset;Int (32bit)
+;;MachDesignSpeed;;;;UnitName.Admin.MachDesignSpeed;Real
+;;AlarmHistory[#];;;;UnitName.Admin.AlarmHistory[#];Alarm
+;;;ID;;;UnitName.Admin.AlarmHistory[#].ID;Int (32bit)
+;;;Value;;;UnitName.Admin.AlarmHistory[#].Value;INt (32bit)
+;;;Message;;;UnitName.Admin.AlarmHistory[#].Message;String
+;;;TimeEvent;;;UnitName.Admin.AlarmHistory[#].TimeEvent;TimeStamp
+;;;;AlmDate;;UnitName.Admin.AlarmHistory[#].TimeEvent.AlmDate;Date
+;;;;AlmTime;;UnitName.Admin.AlarmHistory[#].TimeEvent.AlmTime;Tim
+;;;TimeAck;;;UnitName.Admin.AlarmHistory[#].TimeAck;TimeStamp
+;;;;AlmDate;;UnitName.Admin.AlarmHistory[#].TimeAck.AlmDate;Date
+;;;;AlmTime;;UnitName.Admin.AlarmHistory[#].TimeAck.AlmTime;Tim
+;;AlarmHistoryExtent;;;;UnitName.Admin.AlarmHistoryExtent;Int (32bit)
+;;PACDateTime;;;;UnitName.Admin.PACDateTime;TimeStamp
+;;;;;;UnitName.Admin.PACDateTime.Date;Date
+;;;;;;UnitName.Admin.PACDateTime.Time;Time
