@@ -131,3 +131,4 @@
 ;;PACDateTime;;;;UnitName.Admin.PACDateTime;TimeStamp
 ;;;;;;UnitName.Admin.PACDateTime.Date;Date
 ;;;;;;UnitName.Admin.PACDateTime.Time;Time
+;TestInt;;;;;UnitName.TestInt;Int (32bit) 
